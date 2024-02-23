@@ -1,0 +1,87 @@
+@keyframes risco {
+    0%, 100% {
+        border: 1px solid green;
+    }
+
+    25% {
+        border: 1px solid pink;
+    }
+
+    50% {
+        border: 1px solid blue;
+    }
+
+    75% {
+        border: 1px solid orange;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    width: 80%;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .icon {
+        width: 7%;
+        border-radius: 5px;
+    }
+
+    .links {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+footer {
+    margin-top: 150px;
+    width: 100%;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .contato{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .telefone {
+            margin-right: 3px;
+            width: 2%;
+        }
+    }
+}
+
+.risco {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation-name: risco;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
